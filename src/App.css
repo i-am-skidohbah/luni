@@ -367,6 +367,10 @@ input {
   background: linear-gradient(45deg, #c9d703, #d4e26c, #16c062, #06ffc1);
   opacity: 0.9;
 }
+.hero-banner{
+   background: linear-gradient(45deg,#16c062, #06ffc1, #c9d703, #d4e26c );
+   opacity: 0.9;
+}
 /*  step banner sections */
 
 .banner {
@@ -383,4 +387,7 @@ input {
 }
 .shadow {
   box-shadow: 1px 1px 3px 0px rgba(64, 63, 63, 0.1);
+}
+.bg_footer{
+  background-color: rgb(52, 52, 52);
 }

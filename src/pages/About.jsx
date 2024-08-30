@@ -1,31 +1,26 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import AboutPageCaro, {
+  AboutUs,
+  Services,
+  Team,
+  Brands,
+} from "../components/AboutPageCaro";
+import Headings from "../components/Headings";
+import Footer from "../components/footer";
 
 const About = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
-    <Slider {...settings}>
-      <div className="w-44 h-[100px] flex items-center justify-center px-4 bg-green-200">
-        <h1>example1</h1>
-      </div>
-      <div className="w-44 h-[100px] flex items-center justify-center px-4 bg-green-200">
-        <h1>example2</h1>
-      </div>
-      <div className="w-44 h-[100px] flex items-center justify-center px-4 bg-green-200">
-        <h1>example3</h1>
-      </div>
-      <div className="w-44 h-[100px] flex items-center justify-center px-4 bg-green-200">
-        <h1>example4</h1>
-      </div>
-    </Slider>
+    <section className="">
+      <AboutPageCaro />
+
+      <AboutUs />
+      <Services />
+      <Headings tips="our teams" title="meet with proffessionals" />
+      <Team />
+      <Headings tips="our brands" title="best of the bests" />
+      <Brands />
+      <Footer />
+    </section>
   );
 };
 
