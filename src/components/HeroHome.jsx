@@ -14,8 +14,7 @@ const HeroHome = () => {
 
           <div className="px-14 w-full  md:w-[70%]">
             <p className="text-xl font-bold  tracking-wide space-x-4 pt-4 pb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              labore voluptatum sit quae tenetur?
+              5KVA inverter system on a 5Kwh lithium iron Phosphate (LiFePO4) backup
             </p>
           </div>
           <div className="px-14">
