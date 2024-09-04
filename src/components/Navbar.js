@@ -45,7 +45,7 @@ const Navbar = () => {
             About Us
           </NavLink>
           <NavLink to="/service" className="nav-item">
-            Products & Services
+            Products
           </NavLink>
 
           <NavLink to="/projects" className="nav-item">
