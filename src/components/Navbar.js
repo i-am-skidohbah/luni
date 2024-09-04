@@ -42,15 +42,20 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink to="/about" className="nav-item">
-            About
+            About Us
           </NavLink>
           <NavLink to="/service" className="nav-item">
-            Work
+            Products & Services
           </NavLink>
 
-          <NavLink to="/carts" className="nav-item">
-            Careers
+          <NavLink to="/projects" className="nav-item">
+            Projects
           </NavLink>
+
+            <NavLink to="/training" className="nav-item">
+            Training
+          </NavLink>
+              
           <NavLink to="/contact" className="nav-item">
             Contact Us
           </NavLink>
