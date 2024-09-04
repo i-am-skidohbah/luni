@@ -52,8 +52,8 @@ const ProductBanner = () => {
 
   //
   return (
-    <div className="w-full max-h-[500px] min-h-[auto] py-6 bg-white">
-      <Slider {...settings} className=" px-4  flex flex-col md:flex-row  ">
+    <div className="w-full common-padding  bg-white">
+      <Slider {...settings} className=" ">
         {/* rendering the Latest  Products  */}
 
         {LatestProduct.map((each, index) => {
@@ -61,7 +61,7 @@ const ProductBanner = () => {
             <ProductItems
               key={index}
               image={each.image}
-              id={each.id}
+              productId={each._id}
               Name={each.Name}
               price={each.price}
               Details={each.details}

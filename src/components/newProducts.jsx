@@ -14,13 +14,13 @@ const NewProducts = () => {
 
   return (
     <>
-      <div className="bg-white py-6 px-4 grid border place-items-center gap-2 grid-cols-2 md:grid-cols-4">
+      <div className="bg-white common-padding grid  place-items-center  grid-cols-2 md:grid-cols-4">
         {newProduct &&
           newProduct.map((items, index) => {
             return (
               <NewProductsItem
                 key={index}
-                id={items.id}
+                productId={items._id}
                 Name={items.Name}
                 image={items.image}
                 Details={items.details}
