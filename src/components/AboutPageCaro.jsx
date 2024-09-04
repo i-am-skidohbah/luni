@@ -19,12 +19,12 @@ const AboutPageCaro = () => {
       <div className="absolute top-36 left-0 right-0 bottom-0">
         <div className="flex flex-col items-center justify-center px-4 py-2">
           <h1 className="text-center text-white py-4 text-6xl uppercase">
-            we are BLuestar
+            LIGHTUP NIGERIA
           </h1>
           <hr className="w-32 bg-white h-1" />
           <p className="text-center text-white text-2xl py-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam,
-            cum.
+            “Lightup Nigeria Solar Power Ltd offers innovative, affordable, and sustainable solar energy solutions to empower homes and businesses across Nigeria, 
+            reducing energy costs and promoting environmental responsibility.”
           </p>
         </div>
       </div>
@@ -40,20 +40,19 @@ export const AboutUs = () => {
           <h1 className="text-balance text-base text-justify pt-6 md:py-4">
             About us
           </h1>
-          <h1 className="text-black text-5xl py-6 font-bold">Sun Power</h1>
+          <h1 className="text-black text-5xl py-6 font-bold">Welcome to Our World of Solar Power Excellence!</h1>
           <hr className="w-24" />
           <p className="text-justify text-black  py-4 text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            obcaecati deserunt quidem alias mollitia,
+
+Lightup Nigeria Solar Power Ltd was incorporated in August 2020 with Corporate Affairs Commission under the Company and Allied Masters Act Laws of the Federation of Nigeria with RC No: 1700859. 
+            
           </p>
         </div>
 
         <div className=" w-full md:w-[35%] ">
           <p className=" text-justify text-black text-xl py-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-            et maxime iste quod. Quam minima repellendus accusamus expedita
-            ducimus ipsam, architecto aliquam officiis! Est ratione rem vitae,
-            doloribus sapiente libero?
+           We offer innovative, afforable, and sustainable solar energy solutions to power homes and businesses across Nigeria, 
+            reducing energy costs and promoting environmental responsibility with the use of lithium phosphate technology
           </p>
         </div>
       </div>
