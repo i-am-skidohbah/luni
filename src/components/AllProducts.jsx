@@ -1,21 +1,23 @@
+import React from "react";
+import image from "../Assests/s3.jpg";
 import { Link } from "react-router-dom";
-import Buttons from "./Buttons";
-const ProductItems = ({ image, Name, Details, price, productId }) => {
+import Buttons from "./Button";
+const ProductGrids = ({ image, price, Details, Name, productId }) => {
   return (
-    <Link to={`/${productId}`}>
-      <div className="w-full relative  h-full group cursor-grab flex flex-col justify-center  items-center px-6 py-4  border-b">
-        <div className="w-full h-full flex items-center justify-center">
-          <img src={image[0]} alt="" className="  w-full md:w-48 h-full " />
+    <Link to={`${productId}`}>
+      <div className="w-full  grid grid-cols-2 group md:border cursor-grab  md:gap-0 gap-4 relative">
+        <div className="w-full  h-full flex items-center justify-center  backdrop-blur">
+          <img src={image[0]} alt="" className="  w-full  md:w-48 h-full " />
           <div className="group-hover:flex flex-col  items-center hidden justify-center absolute top-0 bottom-10">
             <Buttons />
           </div>
         </div>
 
         <div className="w-full h-full ">
-          <h1 className="text-orange-300  capitalize text-xs ">{Name}</h1>
-          <h3 className="text-black text-xl font-semibold group-hover:duration-75 group-hover:text-green-400">
+          <h1 className="text-orange-300  uppercase text-sm ">{Name}</h1>
+          <h1 className="text-black text-xl group-hover:duration-75 group-hover:text-green-400">
             Home Saver
-          </h3>
+          </h1>
 
           <div className="py-4 relative">
             <p className="text-sm  text-black font-normal">{Details}</p>
@@ -27,13 +29,13 @@ const ProductItems = ({ image, Name, Details, price, productId }) => {
           </div> */}
             {/*  */}
           </div>
-          <p className="text-black text-xl tracking-wide space-x-4 font-semibold">
-            {price}
-          </p>
+          <p className="text-black text-xl tracking-wide font-bold">{price}</p>
         </div>
+
+        <hr className="w-full" />
       </div>
     </Link>
   );
 };
 
-export default ProductItems;
+export default ProductGrids;
