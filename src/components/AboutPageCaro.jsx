@@ -40,7 +40,7 @@ export const AboutUs = () => {
           <h1 className="text-balance text-base text-justify pt-6 md:py-4">
             About us
           </h1>
-          <h1 className="text-black text-5xl py-6 font-bold">Welcome to Our World of Solar Power Excellence!</h1>
+          <h1 className="text-black text-3xl py-6 font-bold">Welcome to Our World of Solar Power Excellence!</h1>
           <hr className="w-24" />
           <p className="text-justify text-black  py-4 text-xl">
 
