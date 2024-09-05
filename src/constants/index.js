@@ -1057,48 +1057,42 @@ export const ProductData = [
 export const productCarousel = [
   {
     _id: 1,
-    title1: "sunlight Power",
-    title2: "real power Supply",
-    details: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-              reiciendis rerum Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit.`,
+    title1: "compact Lithium solarator",
+    title2: "SMALL BODY BIG ENGINE!",
+    details: `Get solar Rest of mind.`,
     qualities: [
-      "20,000h of high votage",
-      "20,000h of high votage",
-      "20,000h of high votage",
+      "1200wh capacity",
+      "1200wh backup",
+      "AC/DC Power Options",
     ],
-    price: "$50",
+    price: "#660,000",
     image: image,
   },
 
   {
     _id: 2,
-    title1: "sunlight Power",
-    title2: "real power Supply",
-    details: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-              reiciendis rerum Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit.`,
+   title1: "compact Lithium solarator",
+    title2: "SMALL BODY BIG ENGINE!",
+    details: `Get solar Rest of mind.`,
     qualities: [
-      "20,000h of high votage",
-      "20,000h of high votage",
-      "20,000h of high votage",
+      "1200wh capacity",
+      "1200wh backup",
+      "AC/DC Power Options",
     ],
-    price: "$50",
+    price: "#660,000",
     image: image,
   },
   {
     _id: 3,
-    title1: "sunlight Power",
-    title2: "real power Supply",
-    details: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-              reiciendis rerum Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit.`,
+    title1: "compact Lithium solarator",
+    title2: "SMALL BODY BIG ENGINE!",
+    details: `Get solar Rest of mind.`,
     qualities: [
-      "20,000h of high votage",
-      "20,000h of high votage",
-      "20,000h of high votage",
+      "1200wh capacity",
+      "1200wh backup",
+      "AC/DC Power Options",
     ],
-    price: "$50",
+    price: "#660,000",
     image: image,
   },
 ];
