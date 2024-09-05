@@ -21,7 +21,7 @@ const Banner = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className=" w-full h-auto relative bg-white ">
+    <div className=" w-full h-auto common-padding  bg-white ">
       <Slider {...settings}>
         {Data.map((each, index) => {
           return (

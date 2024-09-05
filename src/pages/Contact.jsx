@@ -6,13 +6,16 @@ import Contacts from "../components/contact";
 
 const Contact = () => {
   return (
-    <div className="w-full h-screen bg-white">
-      <AboutPageCaro
-        Title={`contact us`}
-        detail={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam,
+    <div>
+      <div className="w-full pb-36 bg-white">
+        <AboutPageCaro
+          Title={`contact us`}
+          detail={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam,
             cum.`}
-        image={img}
-      />
+          image={img}
+        />
+      </div>
+
       <Headings
         tips={`our contacts`}
         title={`we are ready for your questions`}

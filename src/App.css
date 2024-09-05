@@ -7,7 +7,7 @@
   font-style: normal;
 }
 body {
-  background-color: rgb(219, 217, 217);
+  background-color: rgb(243, 236, 236);
 }
 
 /* HEADINGS */
@@ -49,7 +49,7 @@ h2 {
   position: sticky;
   top: 0;
   background-color: #fff;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
   height: 80px;
 }
 
@@ -66,8 +66,8 @@ h2 {
 /* NAVIGATION */
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 50px;
   overflow: hidden;
@@ -386,8 +386,8 @@ input {
   /* background-position: 100%; */
 }
 .shadow {
-  box-shadow: 1px 1px 3px 0px rgba(64, 63, 63, 0.1);
+  box-shadow: 5px 5px 3px 3px rgba(35, 34, 39, 0.3);
 }
 .bg_footer{
-  background-color: rgb(52, 52, 52);
+  background-color: rgb(48, 51, 62);
 }

@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Headings from "../components/Headings";
-import test from "../Assests/s2.jpg";
+import { ShopContext } from "../Context/ShopContext";
+import CartItems from "../components/CartItems";
 
 const Carts = () => {
+  const { cart } = useContext(ShopContext);
+
+  const [Data, setData] = useState([]);
+  useEffect(() => {
+    setData(cart);
+  }, [cart]);
+
   return (
-    <section className="bg-white h-full md:h-screen common-padding">
+    <section className="bg-white h-full common-padding">
       <div className="py-10">
         <Headings tips="shopping Carts" title="check your products" />
       </div>
+      {/* <CartItems cardData={Data} /> */}
     </section>
   );
 };
-
 
 export default Carts;

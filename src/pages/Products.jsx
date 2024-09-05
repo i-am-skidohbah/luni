@@ -30,12 +30,11 @@ const Products = () => {
               return (
                 <ProductItems
                   key={index}
-                  image={each.image}
-                  id={each.id}
-                  Name={each.Name}
+                  image={each.imgs}
+                  productId={each.id}
+                  brand={each.Brand}
                   price={each.price}
-                  productId={each._id}
-                  // Details={each.details}
+                  title={each.title}
                 />
               );
             })}
@@ -54,7 +53,7 @@ const AllProducts = () => {
   const { ProductData } = useContext(ShopContext);
 
   const [List, SetList] = useState([]);
-  const [show, Setshow] = useState(false);
+  const [show, Setshow] = useState(true);
   const Show = () => {
     Setshow(!show);
   };
@@ -94,11 +93,11 @@ const AllProducts = () => {
               return (
                 <ProductItems
                   key={index}
-                  image={each.image}
-                  id={each.id}
-                  Name={each.Name}
+                  image={each.imgs}
+                  productId={each.id}
+                  brand={each.Brand}
                   price={each.price}
-                  // Details={each.details}
+                  title={each.title}
                 />
               );
             })}
@@ -109,11 +108,11 @@ const AllProducts = () => {
               return (
                 <ProductGrids
                   key={index}
-                  image={each.image}
-                  productId={each._id}
-                  Name={each.Name}
+                  image={each.imgs}
+                  productId={each.id}
+                  brand={each.Brand}
+                  title={each.title}
                   price={each.price}
-                  Details={each.details}
                 />
               );
             })}
@@ -171,11 +170,11 @@ const TopSearch = () => {
             return (
               <ProductItems
                 key={index}
-                image={each.image}
-                id={each.id}
-                Name={each.Name}
+                image={each.imgs}
+                productId={each.id}
+                brand={each.Brand}
                 price={each.price}
-                // Details={each.details}
+                title={each.title}
               />
             );
           })}

@@ -6,7 +6,8 @@ import AboutPageCaro, {
   Brands,
 } from "../components/AboutPageCaro";
 import Headings from "../components/Headings";
-import Footer from "../components/footer";
+
+
 
 const About = () => {
   return (
@@ -17,9 +18,8 @@ const About = () => {
       <Services />
       <Headings tips="our teams" title="meet with proffessionals" />
       <Team />
-      <Headings tips="our brands" title="best of the bests" />
+
       <Brands />
-      <Footer />
     </section>
   );
 };

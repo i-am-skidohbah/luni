@@ -20,7 +20,7 @@ const BestOffer = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="w-full  h-full border bg-white ">
+    <div className="w-full  h-full   bg-white ">
       <Slider {...settings}>
         {BestOffer.map((e, i) => {
           return (

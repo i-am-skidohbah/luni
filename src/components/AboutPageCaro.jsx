@@ -4,6 +4,7 @@ import solar from "../Assests/solar 2.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Headings from "./Headings";
 import { Brand } from "../constants";
 
 const AboutPageCaro = () => {
@@ -34,21 +35,19 @@ const AboutPageCaro = () => {
 
 export const AboutUs = () => {
   return (
-    <section className=" px-3 bg-white pb-24 md:pt-36">
-      <div className="flex items-center md:flex-row flex-col gap-3 justify-center w-full">
-        <div className=" w-full md:w-[35%]">
-          <h1 className="text-balance text-base text-justify pt-6 md:py-4">
-            About us
-          </h1>
-          <h1 className="text-black text-5xl py-6 font-bold">Sun Power</h1>
+    <section className=" common-padding md:px-44 px-4 flex justify-center items-center bg-white ">
+      <div className="flex items-center md:flex-row  flex-col gap-8 md:w-3/4 justify-center w-full">
+        <div className=" w-full md:w-2/4">
+          <h1 className="text-balance text-base text-justify ">About us</h1>
+          <h1 className="text-black text-5xl py-2 font-bold">Sun Power</h1>
           <hr className="w-24" />
-          <p className="text-justify text-black  py-4 text-xl">
+          <p className="text-justify text-black  text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
             obcaecati deserunt quidem alias mollitia,
           </p>
         </div>
 
-        <div className=" w-full md:w-[35%] ">
+        <div className=" w-full md:w-2/4 ">
           <p className=" text-justify text-black text-xl py-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
             et maxime iste quod. Quam minima repellendus accusamus expedita
@@ -70,17 +69,15 @@ export const Services = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="bg-white p-4">
+    <div className="bg-white common-padding">
       <div className="flex items-center md:flex-row flex-col justify-center px-4 gap-4  py-6">
         <div className=" w-full md:w-1/4">
           <div className="w-full">
             <img src={solar} className="w-full rounded-xl" alt="" />
           </div>
           <div>
-            <h1 className="text-center py-4 font-bold text-2xl">
-              Installation
-            </h1>
-            <p className="text-center text-black text-xl text-semibold">
+            <h1 className="text-center py-2 text-2xl">Installation</h1>
+            <p className="text-center text-black text-xl text-normal">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto in
               cum ducimus fugiat magnam.
             </p>
@@ -92,8 +89,8 @@ export const Services = () => {
             <img src={solar} className="w-full rounded-xl" alt="" />
           </div>
           <div>
-            <h1 className="text-center font-bold py-4 text-2xl">Vendor</h1>
-            <p className="text-center text-black text-xl text-semibold">
+            <h1 className="text-center py-2 text-2xl">Vendor</h1>
+            <p className="text-center text-black text-xl text-normal">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto in
               cum ducimus fugiat magnam.
             </p>
@@ -105,8 +102,8 @@ export const Services = () => {
             <img src={solar} className="w-full rounded-xl" alt="" />
           </div>
           <div>
-            <h1 className="text-center font-bold py-4 text-2xl">Fixing</h1>
-            <p className="text-center text-black text-xl text-semibold">
+            <h1 className="text-center  py-2 text-2xl">Fixing</h1>
+            <p className="text-center text-black text-xl text-normal">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto in
               cum ducimus fugiat magnam.
             </p>
@@ -119,7 +116,7 @@ export const Services = () => {
 
 export const Team = () => {
   return (
-    <div className="bg-white  px-6 md:px-44">
+    <div className="bg-white common-padding  p-4 md:px-44">
       <div className=" grid grid-cols-1 place-items-center gap-4 w-full justify-center md:grid-cols-3 ">
         <div className="w-full h-[600px] ">
           <div className=" w-full h-3/4 bg-green-300"></div>
@@ -170,17 +167,21 @@ export const Team = () => {
 };
 export const Brands = () => {
   return (
-    <div className="bg-white px-36 pb-32">
-      <div className="w-full md:grid hidden gap-6 place-items-center justify-center md:grid-cols-5">
-        {Brand.map((e, i) => {
-          return (
-            <div key={i} className="w-full">
-              <img src={e} alt="" className="w-32" />
-            </div>
-          );
-        })}
+    <section className="common-padding md:block hidden bg-white ">
+      {" "}
+      <Headings tips="our brands" title="best of the bests" />
+      <div className="bg-white common-padding">
+        <div className="w-full md:grid hidden gap-6 place-items-center justify-center md:grid-cols-5">
+          {Brand.map((e, i) => {
+            return (
+              <div key={i} className="w-full">
+                <img src={e} alt="" className="w-32" />
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default AboutPageCaro;

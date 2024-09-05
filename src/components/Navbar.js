@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../App.css";
 import { useState } from "react";
 import { Avatar, Cart } from "../utilitis";
 
 import { NavLink } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
 
 const Navbar = () => {
+  const { cart } = useContext(ShopContext);
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
 
@@ -44,12 +46,12 @@ const Navbar = () => {
           <NavLink to="/about" className="nav-item">
             About
           </NavLink>
-          <NavLink to="/service" className="nav-item">
-            Work
+          <NavLink to="/products" className="nav-item">
+            Products
           </NavLink>
 
           <NavLink to="/carts" className="nav-item">
-            Careers
+            Carts
           </NavLink>
           <NavLink to="/contact" className="nav-item">
             Contact Us
@@ -67,9 +69,12 @@ const Navbar = () => {
             placeholder="Search.."
           />
         </ul>
-        <div className="flex flex-center justify-center ">
+        <div className="flex flex-center relative justify-center ">
           <img src={Avatar} className="w-32 cursor-pointer" />
           <img src={Cart} className="w-32  cursor-pointer" />
+          <h2 className="absolute text-red-700 font-bold -right-5 text-center text-2xl px-2">
+            6
+          </h2>
         </div>
       </nav>
     </div>

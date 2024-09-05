@@ -52,19 +52,19 @@ const ProductBanner = () => {
 
   //
   return (
-    <div className="w-full common-padding  bg-white">
-      <Slider {...settings} className=" ">
+    <div className="w-full common-padding  bg-white ">
+      <Slider {...settings} className=" border-b">
         {/* rendering the Latest  Products  */}
 
         {LatestProduct.map((each, index) => {
           return (
             <ProductItems
               key={index}
-              image={each.image}
-              productId={each._id}
-              Name={each.Name}
+              image={each.imgs}
+              productId={each.id}
+              brand={each.Brand}
               price={each.price}
-              Details={each.details}
+              title={each.title}
             />
           );
         })}

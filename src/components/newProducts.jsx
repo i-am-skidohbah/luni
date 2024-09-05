@@ -20,10 +20,10 @@ const NewProducts = () => {
             return (
               <NewProductsItem
                 key={index}
-                productId={items._id}
-                Name={items.Name}
-                image={items.image}
-                Details={items.details}
+                productId={items.id}
+                brand={items.Brand}
+                image={items.imgs}
+                title={items.title}
                 category={items.category}
                 price={items.price}
               />

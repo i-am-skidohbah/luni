@@ -17,11 +17,12 @@ const ProductList = () => {
           return (
             <ProductItems
               key={index}
-              image={each.image}
-              productId={each._id}
-              Name={each.Name}
+              category={each.category}
+              image={each.imgs}
+              productId={each.id}
+              brand={each.Brand}
               price={each.price}
-              //   Details={each.details}
+              title={each.title}
             />
           );
         })}
